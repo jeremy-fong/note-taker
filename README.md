@@ -8,7 +8,7 @@
 5. [Usage](#usage)
 6. [User Story](#user-story)
 7. [Acceptance Criteria](#acceptance-criteria)
-8. [Video Preview of Project](#video-preview-of-project)
+8. [Screenshot Preview of Project](#screenshot-preview-of-project)
 9. [Source](#source)
 
 ## Title :
@@ -18,16 +18,17 @@
 ### *Note Taker*
 
 ## Description :
-* This project uses NodeJS, and Express
-* This project will generate an index.HTML file according to the information the user provided 
+* This project uses NodeJS, Express, and Heroku for deployment.
+* This project will allow the user to write notes that will persist using a database. They are able to view the notes as well as delete them.
 
 ## Installation :
-The user needs to install node for this project. 
+The user needs to install node and express for this project. 
 
 ## Usage :
-- Open the index.js in the terminal, then enter node index.js in the command-line.
-- The user will then input information according to the questions asked.
-- Based on the information the user provided, a team profile index.HTML will be created in the dist folder.
+- Once on the homepage, click on the 'Get Started' button, which will take you to the notes page.
+- The notes page will show a column to the left side with saved notes from the database. A 'Note Title' and 'Note Text' field will show to the right, where the user can fill it out, then a save icon will appear in the top right, which will save the note. 
+- The saved note will be loaded to the left column with the other notes that are saved in the database. The notes can be viewed by double clicking them. 
+- The saved notes can be deleted by clicking on the red trashcan. 
 
 ## User Story :
 ```md
@@ -54,21 +55,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 
-## Video Preview of Project :
-[Video Preview](https://drive.google.com/file/d/1GCLnTe3E6DDYM5PoCQ-_pRlO8XdvlNSk/view)
+## Screenshot Preview of Project :
+
 
 ## Source :
-- GitHub Link: https://github.com/jeremy-fong/team-profile-generator
-
-
-
-
-// let deleteNote = req.params.id;
-// //creates variable from db.json file
-// let notes = JSON.parse(fs.readFileSync('./data/db.json', 'utf8'));
-// //removes/filters deleteFile from notes
-// let newNotes = notes.filter(file => file.id !== deleteNote);
-// //write notes variable to db.json file
-// fs.writeFileSync('./data/db.json', JSON.stringify(newNotes));
-// //return notes to client
-// return res.json(newNotes);
+- GitHub Link: https://github.com/jeremy-fong/note-taker
+- Deployed Link:

@@ -1,7 +1,7 @@
 const notes = require('express').Router();
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
-
+const fs = require('fs').promises;
 
 
 // GET Route for retrieving all the notes
@@ -31,6 +31,17 @@ notes.post('/', (req, res) => {
     }
   });
 
+notes.delete('/:id', async (req, res) => {
+  const { id } = req.params;
+  const note = await fs.readFile('./db/db.json', 'utf8')
+  .catch(err => console.error(err))
+
+const notes = JSON.parse(note)
+const newNotes = notes.filter(note => note.id != id)
+
+await writeToFile('./db/db.json', newNotes);
+  res.send('Success');
+});
   
 module.exports = notes;
 
