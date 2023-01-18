@@ -56,6 +56,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 
 ## Screenshot Preview of Project :
+![note-taker-Ss](https://user-images.githubusercontent.com/112743562/213066119-4818b3ff-be5e-4904-b8bc-e39a204cacde.jpg)
+![note-taker-Ss2](https://user-images.githubusercontent.com/112743562/213066344-9df1a96d-8f66-458c-af75-ab23fe0daa86.jpg)
+![note-taker-Ss3](https://user-images.githubusercontent.com/112743562/213066230-f7cb4350-51e4-457d-9cad-6129c295bf77.jpg)
 
 
 ## Source :
